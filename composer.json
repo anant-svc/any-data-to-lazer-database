@@ -1,0 +1,33 @@
+{
+    "name": "anant-svc/any-data-to-lazer-database",
+    "description": "PHP library to transfer MYSQL data to Lazer-Database",
+    "keywords": ["lazer", "simple", "json", "flat", "file", "database", "db", "mysql", "converter"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ananth Iyer",
+            "email": "ananthiyerit@gmail.com",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "greg0/lazer-database": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.2.0",
+        "mikey179/vfsstream": "~1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lazer\\AnyDataToLazerDatabase\\": "src/",
+            "Lazer\\AnyDataToLazerDatabase\\Test\\": "tests/src/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --testdox"
+    },
+    "config": {
+        "github-protocols": ["https"]
+    }
+}
